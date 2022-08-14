@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackers</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="shortcut icon" href="./src/img/logo.png" type="image/x-icon">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./src/app.js" defer></script>
+</head>
+
+<body>
+    <div class="msg_box"></div>
+    <div class="new_employee_popup">
+        <div class="logo"><img src="./src/img/logo.png" width="50" alt=""></div>
+        <div class="form_heading">New User</div>
+        <hr>
+        <form>
+            <div class="fullname">
+                <label for="fullname">Full Name</label>
+                <input class="form_input" name="name" type="text" id="fullname">
+            </div>
+            <div class="email">
+                <label for="email">Email</label>
+                <input class="form_input" name="emailId" type="text" id="email">
+            </div>
+            <div class="dob">
+                <label for="dob">Dob</label>
+                <input class="form_input" name="dob" type="date" id="dob">
+            </div>
+            <div class="gender">
+                <label>Gender</label>
+                <div class="sex">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="male" id="male">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" value="female" id="female">
+                </div>
+
+            </div>
+            <div class="image">
+                <label for="img_url">Image Link</label>
+                <input class="form_input" name="imgUrl" type="text" id="img_url">
+            </div>
+            <div class="department">
+                <label for="department">Department</label>
+                <select id="department" class="form_input" name="department">
+                    <option value="null" selected>Select</option>
+                    <option value="it">IT</option>
+                    <option value="networking">Networking</option>
+                    <option value="web">Web</option>
+                    <option value="android">Android</option>
+                    <option value="ios">IOS</option>
+                </select>
+            </div>
+            <div class="role">
+                <label for="role">Role</label>
+                <select class="form_input" name="role" id="role">
+                    <option value="null" selected>Select</option>
+                    <option value="it">IT</option>
+                    <option value="networking">Networking</option>
+                    <option value="web">Web</option>
+                    <option value="android">Android</option>
+                    <option value="ios">IOS</option>
+                </select>
+            </div>
+            <div class="salary">
+                <label for="salary">Salary per Month</label>
+                <input class="form_input" name="salary" type="number" id="salary">
+            </div>
+            <div class="bio">
+                <label for="bio">Bio</label>
+                <textarea class="form_input" name="bio" id="bio" cols="30" rows="5"></textarea>
+            </div>
+            <div class="address">
+                <label for="address">Address</label>
+                <textarea class="form_input" name="address" id="address" cols="30" rows="5"></textarea>
+            </div>
+            <div class="hobby">
+                <label for="hobby">Hobby</label>
+                <input class="form_input" name="hobby" type="text" id="hobby">
+            </div>
+            <div class="message">
+                <div class="disability">
+                    <div>
+                        <label for="c">Physically desabled</label>
+                        <input type="checkbox" id="disability">
+                    </div>
+                </div>
+            </div>
+            <button class="submit_btn">Submit</button>
+        </form>
+    </div>
+    <div class="overlay"></div>
+    <!-- <header id="header">
+        <nav>
+            <div class="logo">
+                <img src="./src/img/logo_white.png" width="50px" alt="">
+                Stackers
+            </div>
+        </nav>
+        <div class="header_content">
+            <h1 class="heading">Wellcome to <span class="highlight">Stackers</span></h1>
+        </div>
+    </header> -->
+    <section id="employee">
+        <nav class="employee_nav">
+            <div class="nav_heading">
+                Manage employes
+                <input class="search" type="search" placeholder="search here">
+            </div>
+            <div class="logo">
+                <img src="./src/img/logo.png" width="50px" alt="">
+            </div>
+            <div class="btns">
+                <button class="add_new_employee">Add new</button>
+                <button class="filter_btn">Filter</button>
+                <div class="filter_popup "></div>
+            </div>
+        </nav>
+        <div class="employee_container">
+            <div class="err">
+                <img src="./src/img/error.png" width="100" alt="">
+                <div class="err_msg"></div>
+            </div>
+            <!-- <div class="employee_card">
+                <div class="img_box">
+                    <img class="user_img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs7QPGzBefaOz5xC_y7q_Ncne7Kd8J8f85xw&usqp=CAU"
+                        alt="">
+                    <img class="img_wave" src="./src/img/wave.svg" alt="">
+                </div>
+                <div class="name">Alex Gander</div>
+                <div class="info">
+                    <div class="department"><span class="title">Department</span> <span class="value"> Web</span></div>
+                    <div class="role"><span class="title">Role </span><span class="value"> Web Designer</span></div>
+                    <div class="salary_status"><span class="title">Salary Status</span> <span class="value pending">
+                            Pending</span></div>
+                </div>
+                <div class="view_more_btn">
+                    <button>view more</button>
+                </div>
+            </div> -->
+        </div>
+    </section>
+</body>
+
+</html>
